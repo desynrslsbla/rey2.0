@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rey Graduation Day</title>
+    
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Merienda:wght@400;700&family=Crimson+Pro:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <main>
+        <section id="home-screen" class="screen">
+            <div class="content text-center">
+                <img src="images/icon-cute.png" alt="Cute Icon" class="hello-icon">
+                <h1>Hayiiii <span class="accent-text">Reyhan Pebriardianto!</span></h1>
+                <p>There's something new for you!</p>
+                <p>Do you want to see your graduation gift?(‾◡◝)</p>
+                <div class="button-group">
+                    <button id="yes-btn" class="btn">YES PLEASE</button>
+                    <button id="no-btn" class="btn btn-red-outline">NO THANKS</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="no-thanks-screen" class="screen hidden">
+            <div class="content text-center">
+                <img src="images/icons8-broken-heart-100.png" alt="">
+                <p>Uhhh.. Why did you click this? kamu beneran ngga mau nerima gift dari akuu kah??!!</p>
+                <p class="italic-text">so sad huhuuuu＞﹏＜</p>
+                <p class="bold-text">IHHH... ULANG TERUS KLIK YES GAAAA!!!😡</p>
+                <button id="try-again-btn" class="btn">Try Again</button>
+            </div>
+        </section>
+
+        <section id="menu-screen" class="screen hidden">
+            <div class="content text-center">
+                <h2>THESE ARE FOR YOU!</h2>
+                <p class="bold-text">I hope you like it yaww.</p>
+                <p>*harus suka si gamau tau( •̀ .̫ •́ )✧ﾉﾞ</p>
+                <div class="menu-choices">
+                    <div id="gallery-choice" class="choice-card">
+                        <img src="images/icon-gallery.jpg" alt="Gallery Icon">
+                    </div>
+                    <div id="gift-choice" class="choice-card">
+                        <img src="images/icon-gift.jpg" alt="Gift Icon">
+                    </div>
+                    <div id="message-choice" class="choice-card">
+                        <img src="images/icon-envelope.jpg" alt="Envelope Icon">
+                    </div>
+                </div>
+                <button id="return-to-home-btn" class="btn btn-red-outline">Back to Start</button>
+            </div>
+        </section>
+
+        <section id="gallery-screen" class="screen hidden">
+            <div class="content-gallery">
+                <div class="gallery-grid">
+                    <div class="photo-frame"><img src="images/rey awal masuk.jpg" alt="Memory 1"><span>When You First Started, Right?</span></div>
+                    <div class="photo-frame"><img src="images/rey.jpg" alt="Memory 2"><span>After the Thesis Defense</span></div>
+                    <div class="photo-frame"><img src="images/rey.jpg" alt="Memory 3"><span>Finally, Graduation Day</span></div>
+                    <div class="photo-frame"><img src="images/rey.jpg" alt="Memory 4"><span>With Your Family</span></div>
+                    <!-- <div class="photo-frame"><img src="images/rey.jpg" alt="Memory 5"><span>Celebration Time!</span></div>
+                    <div class="photo-frame"><img src="images/rey.jpg" alt="Memory 6"><span>Ready for the Future</span></div> -->
+                </div>
+                <p>*Huhhh, Sorry for the few photos, cz I don't have many pictures of you😔</p>
+                <h3 class="subtitle-handwritten">A little bit captured Memories</h3>
+                <button class="btn return-btn">Return</button>
+            </div>
+        </section>
+
+        <section id="flower-screen" class="screen hidden">
+            <div class="content-flower">
+
+                <div class="flower-title-container">
+                    <h2 class="flower-title">~Edelweiss~</h2>
+                    <p class="flower-subtitle">Why Edelweiss? Because to me this flower represents you!</p>
+                </div>
+                <div class="flower-interactive-container">
+                    
+                    <div class="flower-center">
+                        <img class="flower-image" src="images/edelweiss.jpg" alt="Edelweiss Flower">
+                    </div>
+
+                    <div class="point point-1" data-point="1"><span>1</span></div>
+                    <div class="point point-2" data-point="2"><span>2</span></div>
+                    <div class="point point-3" data-point="3"><span>3</span></div>
+                    <div class="point point-4" data-point="4"><span>4</span></div>
+                    <div class="point point-5" data-point="5"><span>5</span></div>
+                    <div class="point point-6" data-point="6"><span>6</span></div>
+                    <div class="point point-7" data-point="7"><span>7</span></div>
+                    <div class="point point-8" data-point="8"><span>8</span></div>
+                    <div class="point point-9" data-point="9"><span>9</span></div>
+                    <div class="point point-10" data-point="10"><span>10</span></div>
+
+                </div>
+
+                <div class="flower-text-display">
+                    <p class="placeholder">Click a number to reveal the meaning!</p>
+                </div>
+
+                <h3 class="subtitle-handwritten">Virtual Flowers</h3>
+                <button class="btn return-btn">Return</button>
+            </div>
+        </section>
+
+        <section id="message-screen" class="screen hidden">
+            <div class="content">
+                <div class="message-card">
+                    <h2>DEAR REY,</h2>
+                    <h3 class="content center-text">HAPPY GRADUATION!!!(>'-'<)</h3>
+                    <p>Reyyy, Omagatttt, Congratulations on your official degree yaaa! </p>
+                    <p>
+                        I can't believe you've reached this stage. It feels like we just met yesterday, 
+                        and now you're already graduating, yaaa walopun kita baru kenal sekitar 2 bulan? (If I'm not wrong) ngga kerasa sih,
+                        But I already know a little about you and your daily life. Emang ngga banyak si, tapi yang aku tau, 
+                        kamu orang yang sangat konsisten dan aku cukup senang bisa jadi salah satu orang yang 'menyaksikan' perjalanan akhir (dan awal yang baru) ini, 
+                        meskipun cuma dari jauh dan baru sebentar. Dengan dimulai dari liat kamu sidang akhir skripsi, lega pas artikelnya kelar, 
+                        sampai hari dimana kamu beneran pake toga.
+                    </p>
+                    <p>
+                        You make every day special just by being in it. You deserve all the success and happiness the world has to offer. 
+                        I'm so incredibly proud of the person you are, and I'll always be cheering for you, Rey!
+                    </p>
+                    <p class="signature">
+                        Kind Regards,<br>
+                        [Desy Nursalsabila]
+                    </p>
+                    <p>note: Karena kamu ngga mau menerima giftku secara langsung, so this website 2.0 for you, jangan ditolak lagi loh🙂‍↕️</p>
+                </div>
+                <h3 class="subtitle-handwritten">Message for you</h3>
+                <button class="btn return-btn">Return</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        Made With 🤍 by Blyereen
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
